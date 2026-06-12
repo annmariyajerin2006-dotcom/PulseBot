@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Your Name">
+    <title>Your Name - Developer Portfolio</title>
+    
+    <!-- Google Fonts Preconnect & Stylesheet -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 2.2 Navigation Bar -->
+    <nav class="nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <span class="nav-brand">Your Name</span>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2.3 Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <p class="hero-tag reveal">Hey, I'm</p>
+            <h1 class="hero-name reveal">Your Name</h1>
+            <p class="hero-role reveal">UI Designer &amp; Web Developer — <span class="highlight">B.Tech CSE, Kerala</span></p>
+            <p class="hero-bio reveal">I design systems, build the web, and automate the boring stuff.</p>
+            <div class="hero-ctas reveal">
+                <a href="#projects" class="btn btn-primary">See My Projects</a>
+                <a href="https://figma.com" target="_blank" rel="noopener" class="btn btn-secondary">View Figma Design</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2.4 Projects Section -->
+    <main>
+        <section class="section" id="projects">
+            <div class="container">
+                <p class="section-label">01 — Work</p>
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project Card 1: Tide -->
+                    <article class="card reveal">
+                        <span class="card-tag">UI/UX Design</span>
+                        <h3 class="card-title">Tide</h3>
+                        <p class="card-desc">A complete task-manager app design built in Figma: a token-based design system, seven screens, and a clickable prototype.</p>
+                        <div class="card-meta">
+                            <span class="chip">Figma</span>
+                            <span class="chip">Design System</span>
+                        </div>
+                        <a href="https://figma.com" target="_blank" rel="noopener" class="card-link">View Prototype</a>
+                    </article>
+
+                    <!-- Project Card 2: Folio -->
+                    <article class="card reveal">
+                        <span class="card-tag">Web Development</span>
+                        <h3 class="card-title">Folio</h3>
+                        <p class="card-desc">A live personal portfolio site built from scratch using semantic HTML, responsive CSS grids, and interactive JavaScript features.</p>
+                        <div class="card-meta">
+                            <span class="chip">HTML/CSS</span>
+                            <span class="chip">JavaScript</span>
+                        </div>
+                        <a href="#" class="card-link">View Repository</a>
+                    </article>
+
+                    <!-- Project Card 3: Pulse -->
+                    <article class="card reveal">
+                        <span class="card-tag">Automation</span>
+                        <h3 class="card-title">Pulse</h3>
+                        <p class="card-desc">An upcoming automated Python bot designed to track, gather data, and optimize routine digital tasks efficiently.</p>
+                        <div class="card-meta">
+                            <span class="chip">Python</span>
+                            <span class="chip">Automation</span>
+                        </div>
+                        <a href="#" class="card-link">Read Blueprint</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.5 Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <p class="section-label">02 — Expertise</p>
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-list">
+                    <!-- Skill 1 -->
+                    <div class="skill reveal">
+                        <div class="skill-head">
+                            <span class="skill-name">HTML &amp; CSS</span>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" style="--w: 75%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div class="skill reveal">
+                        <div class="skill-head">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-pct">60%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" style="--w: 60%;"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div class="skill reveal">
+                        <div class="skill-head">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" style="--w: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <p class="section-label">03 — Connection</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-links reveal">
+                    <a href="mailto:your.email@example.com" class="btn btn-primary contact-link">Email Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Your Name. Handcrafted from zero.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="to-top" class="to-top-btn" aria-label="Back to top">↑</button>
+
+    <!-- Custom Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
